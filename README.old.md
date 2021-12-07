@@ -1,2 +1,0 @@
-# ReactPortfolio
-portfolio using react 
