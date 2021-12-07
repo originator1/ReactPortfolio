@@ -1,0 +1,18 @@
+* {
+    background-color: #A8B0BF;
+  
+}
+.aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    left: 10vw;
+    max-width: 75vw;
+    min-height: 80vh;
+}
+
+
+
+/* #534A8C = medium purple */

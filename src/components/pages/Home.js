@@ -1,8 +1,9 @@
 import React from 'react';
+import "../../styles/AboutMe.css"
 
 export default function Home() {
   return (
-    <div>
+    <div className="aboutMeContainer">
       <h1>About Me</h1>
       <p>
         My name is James Garinger, I have just recently graduated from the full-stack

@@ -1,10 +1,15 @@
 import React from 'react';
 import woImage from '../../../src/leverageWo.jpg'
 import WfImage from '../../../src/WFtracker.jpg'
+
+import "../../styles/Portfolio.css"
+
+
+
 export default function Portfolio() {
-  
+
   return (
-    <div>
+    <div className="portfolioPage">
       <h1>Portfolio Page</h1>
       <p>These are some projects I created with my groups while attending UT austin bootcamp</p>
       
