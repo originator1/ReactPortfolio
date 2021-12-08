@@ -10,18 +10,19 @@ function Footer() {
         <div>
             <Row className="justify-content-center text-center " cs="auto">
                 <Col>
-                    <a href="github">
+                    <a href="https://github.com/originator1">
                         <img src={github} alt="github icon" />
                     </a>
                 </Col>
                 <Col>
-                    <a href="linkedin">
-                        <img src={linkedin} alt="github icon" />
+                    <a href="https://www.linkedin.com/in/james-garinger-22246421b/">
+                        <img src={linkedin} alt="linkedIn icon" />
                     </a>
                 </Col>
                 <Col>
+                
                     <a href="twitter">
-                        <img src={twitter} alt="github icon" />
+                        <img src={twitter} alt="twitter icon" />
                     </a>
                 </Col>
 
