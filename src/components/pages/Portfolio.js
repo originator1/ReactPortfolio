@@ -1,7 +1,7 @@
 import React from 'react';
 import woImage from '../../../src/leverageWo.jpg'
 import WfImage from '../../../src/WFtracker.jpg'
-
+import expenseTrackerImg from '../../../src/expenseTrackerImg.jpg'
 import "../../styles/Portfolio.css"
 
 
@@ -21,8 +21,10 @@ export default function Portfolio() {
         <img src={WfImage} alt="Weather And Fire Tracker Application"></img>
       </a>
 
-      <a><img></img></a>
-      <a><img></img></a>
+      <a href="https://github.com/originator1/ExpenseTracker">
+        <img src={expenseTrackerImg} alt="Weather And Fire Tracker Application"></img>
+      </a>
+      
     </div>
   );
 }
