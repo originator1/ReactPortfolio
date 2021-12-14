@@ -2,6 +2,10 @@
     background-color: #A8B0BF;
   
 }
+
+.portContainer {
+    min-height: 80vh;
+}
 .aboutMeContainer {
     display: flex;
     flex-direction: column;

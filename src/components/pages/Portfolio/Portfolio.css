@@ -1,0 +1,36 @@
+.portfolioPage {
+    margin: 0px;
+    color: #534A8C;
+    background-color: #A8B0BF;
+}
+.portContainer {
+    min-height: 80vh;
+}
+
+.projectCaption {
+    color: #534A8C;
+    text-align: center; 
+}
+
+
+
+.projectLinks {
+    border-radius: 3px;
+    border-color:#534A8C; 
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 0px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.projectImg {
+    width: 350px;
+    height:350px;
+    align-content: space-around;
+    border-radius: 5px;
+    margin-top: 3vh;
+    border: 3px solid #534A8C;
+}

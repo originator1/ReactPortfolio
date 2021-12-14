@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import NavTabs from './NavTabs';
-import Home from './pages/Home';
-import Contact from './pages/Contact';
-import Resume from './pages/Resume';
-import Portfolio from './pages/Portfolio';
+import Home from './pages/Home/Home';
+import Contact from './pages/Contact/Contact';
+import Resume from './pages/Resume/Resume';
+import Portfolio from './pages/Portfolio/Portfolio';
 import Footer from './Footer'
-
+// import "../styles/reset.css"
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -28,9 +28,9 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-      {/* We are passing the currentPage from state and the function to update it */}
+      {/*passing the currentPage from state and the function to update it */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* Here we are calling the renderPage method which will return a component  */}
+      {/*calling the renderPage method which will return a component  */} 
       {renderPage()}
       <Footer />
     </div>
