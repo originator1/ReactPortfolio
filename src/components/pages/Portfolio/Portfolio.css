@@ -1,36 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap');
+
+
 .portfolioPage {
+    font-family: 'Prompt', sans-serif;
     margin: 0px;
     color: #534A8C;
-    background-color: #A8B0BF;
+    /* background-color: #534A8C; */
+    padding-bottom: 3vh;
+    border-radius: 0px 0px 20px 20px;
 }
 .portContainer {
     min-height: 80vh;
 }
 
-.projectCaption {
-    color: #534A8C;
-    text-align: center; 
+#portfolioText {
+    width: 50%;
+    font-family: 'Averia Serif Libre', cursive;
+    margin: auto;
+    background-color: white;
+    opacity: 1;
+    border-radius: 5px;
+    padding: 1.2em;
 }
 
+.projectCaption {
+    font-size: 1.2em;
+    padding-left: 2vw;
+    padding-top: 2.2vh;
+    text-align: center; 
+    text-decoration: none;
+    display:block;
+    color: #534A8C;
+}
 
+.linkBox {
+    text-align: center;
+}
+.projectImg:hover {
+    box-shadow: .4em .4em .3em .2em white;
+    border: 1px solid white;
+}
 
 .projectLinks {
     border-radius: 3px;
-    border-color:#534A8C; 
+    border-color:black; 
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
     padding: 0px;
     padding-top: 2vh;
-    padding-bottom: 2vh;
+    padding-bottom: 2vh;      
 }
 
 .projectImg {
     width: 350px;
     height:350px;
     align-content: space-around;
+    margin-left: 1.5vw;
     border-radius: 5px;
     margin-top: 3vh;
-    border: 3px solid #534A8C;
+    border: 3px solid white;
+    box-shadow: .5em .5em .75em .5em #534A8C;
 }
+

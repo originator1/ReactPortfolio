@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,300&display=swap');
+
 .resumeBtn {
+    border: 2.5px solid white;
     border-radius: 5px;
     margin-top: 8vh;
+    color: white;
+    background-color: #534A8C;
+    width: 25vw;
+}
+
+.resumeTitle {
+    font-size: 1.3em;
 }
 
 .resume {
     min-height: 80vh;
+    color: #534A8C;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {

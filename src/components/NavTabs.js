@@ -1,18 +1,20 @@
 import React from 'react';
 import "./NavTabs.css"
+import favicon from "./favicon.ico"
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     
     <div>
-      <div>
+      <div className="headerBox">
         <br/>
-        <h1 className=" headerName text-center">
-          James Garinger
+        <img id="icon" src={favicon} />
+        <h1 className="headerName text-center">
+          Hi There
         </h1>
       </div>
-      <ul className="nav nav-tabs justify-content-center">
+      <ul className="navBox nav nav-tabs justify-content-start">
         <li className="nav-item">
           <a
             href="#home"

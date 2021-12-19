@@ -1,22 +1,88 @@
-* {
-    background-color: #A8B0BF;
-  
-}
+/* * {
+    background-color: #A8B0BF; 
+} */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,300&display=swap');
 
-.portContainer {
-    min-height: 80vh;
-}
 .aboutMeContainer {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-content: center;
     position: relative;
-    left: 10vw;
-    max-width: 75vw;
-    min-height: 80vh;
+    /* left: 10vw; */
+    /* max-width: 75vw; */
+    /* min-height: 80vh; */
+    color: #534A8C;
+    /* background-color:chartreuse; */
+}
+
+#emoji {
+    /* background-color: palegoldenrod; */
+    /* border-top: #534A8C solid 5px; */
+    padding-bottom: 1vh;
+    width: 50%;
+    height: 50%;
+    /* transition: transform 1s ease-in-out; */
+    font-size: 1em;
+    animation-name: emojislide;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+}
+.aboutMeContainer #emoji {
+    transform: translate(-100%);
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 2.6em;
+    
+}
+
+@keyframes emojislide {
+    0% {transform: translate(-200%);}
+    25% {}
+    50% {}
+    75% {}
+    100% {transform: translate(50%);}
+}
+#im {
+    font-size: 2em;
+    font-family: 'Architects Daughter', cursive;
+}
+#yourName {
+    /* background-color:palegoldenrod; */
+    font-family: 'Montserrat', sans-serif;
+    font: bolder;
+    color: white;
+    font-size: 4em;
+    padding-top: 0px;
+}
+
+#aboutMe {
+    /* background-color:palegoldenrod; */
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 2vh;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.myPic {
+ height: 300px;
+ width: 300px;
+ border-radius: 50%;
+ box-shadow: 0px 0px 1em 5px white;
+ background-color: white;
+ opacity: 1;
+ margin: auto;
 }
 
 
+@media (max-width: 420px) {
+    #aboutMe {
+        padding-left: 20vw;
+        padding-right: 20vw;
+        font-size: 1em;
+     } 
+}
 
 /* #534A8C = medium purple */

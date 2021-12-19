@@ -6,9 +6,9 @@ export default function Resume() {
     <br/>
     <div className="resume">
       <div className="container text-center">
-        <h1>Resume</h1>
+        <h1 className="resumeTitle">Click to view resume</h1>
         <button className="resumeBtn">Resume</button>
-        <br/>
+        
         <br/>
       </div>
     </div>  

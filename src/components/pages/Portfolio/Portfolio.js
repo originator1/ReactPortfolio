@@ -4,6 +4,7 @@ import WfImage from '../Portfolio/WFtracker.jpg'
 import expenseTrackerImg from '../Portfolio/ExpenseTracker.jpg'
 import fitnessTrack from '../Portfolio/fitnessTracker.jpg'
 import jester from '../Portfolio/jesterImg.jpg'
+import "../../../styles/reset.css"
 import "../Portfolio/Portfolio.css"
 
 
@@ -16,10 +17,10 @@ export default function Portfolio() {
         <br/>
         <br/>
         <h1>Portfolio Page</h1>
-        <p>This page shows many different projects I have created over the past three months attending UT Austin's Coding Bootcamp. These projects showcase a collection of different technologies I have learned.</p>
+        <p id="portfolioText">This page shows many different projects I have created over the past three months attending UT Austin's Coding Bootcamp. These projects showcase a collection of different technologies I have learned.</p>
       </div>
       <div className="projectLinks container">  
-        <a className="row-1 lrg" href="https://leveragewo.herokuapp.com/">
+        <a className="row-1 lrg linkBox" href="https://leveragewo.herokuapp.com/">
           <img className="projectImg" src={woImage} alt="Leverage Workout Application Homepage"></img>
           <caption className="projectCaption">Leverage</caption>
         </a>
