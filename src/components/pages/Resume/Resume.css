@@ -5,7 +5,8 @@
     border-radius: 5px;
     margin-top: 8vh;
     color: white;
-    background-color: #534A8C;
+    background-color: rgba(233, 207, 62, 0.959);
+    opacity: .86;
     width: 25vw;
 }
 
@@ -14,8 +15,8 @@
 }
 
 .resume {
-    min-height: 80vh;
-    color: #534A8C;
+    min-height: 70vh;
+    color: rgba(233, 207, 62, 0.959);
     font-family: 'Montserrat', sans-serif;
 }
 

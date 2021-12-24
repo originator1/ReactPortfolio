@@ -1,12 +1,17 @@
+
+
+.iconRow {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+
 .eachIcon {
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-top: 15px;
-    margin-bottom: 2vh;
-    position: relative;
-    top: end; 
-    /* border-bottom: solid 2px black; */
     filter: drop-shadow(4px -5px .9px black);
+
+
     animation-name: icons;
     animation-duration: 3s;
     animation-iteration-count: infinite;  
@@ -14,9 +19,13 @@
 
 
 @keyframes icons {
-    0% {bottom: 0px; filter: drop-shadow(0px 0px 2px #534A8C);}
+    0% {bottom: 0px; filter: drop-shadow(0px 0px 2px rgba(233, 207, 62, 0.959));}
     /* 25% { bottom: 4px; filter: drop-shadow(4px 0px .1px grey)} */
-    50% {bottom: 25px; filter: drop-shadow(0px 13px 1px #534A8C);}
+    50% {bottom: 25px; filter: drop-shadow(0px 13px 1px rgba(233, 207, 62, 0.959));}
     /* 75% {bottom: 4px;}  */
-    100% {bottom: 0px; filter: drop-shadow(0px 0px 2px #534A8C)}
+    100% {bottom: 0px; filter: drop-shadow(0px 0px 2px rgba(233, 207, 62, 0.959))}
+}
+
+@media (min-width: 1560px) {
+
 }

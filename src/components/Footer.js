@@ -7,8 +7,8 @@ import "./Footer.css"
 
 function Footer() {
     return (
-        <div>
-            <Col className="text-center" cs="auto">
+        // <div className="footerBox">
+            <div className="text-center iconRow" cs="auto">
                   
                     <a href="https://github.com/originator1">
                         <img className="eachIcon" src={github} alt="github icon" />
@@ -18,15 +18,13 @@ function Footer() {
                         <img className="eachIcon" src={linkedin} alt="linkedIn icon" />
                     </a>
                 
-                
-                
-                    <a href="twitter">
+                    <a href="https://twitter.com">
                         <img className="eachIcon" src={twitter} alt="twitter icon" />
                     </a>
                
 
-            </Col>
-        </div>
+            </div>
+        // </div>
     )
 }
 

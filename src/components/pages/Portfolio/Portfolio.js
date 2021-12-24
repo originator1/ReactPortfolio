@@ -17,9 +17,10 @@ export default function Portfolio() {
         <br/>
         <br/>
         <h1>Portfolio Page</h1>
-        <p id="portfolioText">This page shows many different projects I have created over the past three months attending UT Austin's Coding Bootcamp. These projects showcase a collection of different technologies I have learned.</p>
+        <p className="portfolioText">▫ Here are a few projects I have started over the past 3 months while attending UTA bootcamp</p>
+        <p className="portfolioText">▫ Each project displayed has a link to respected Github repo with deployed app link in README. </p>
       </div>
-      <div className="projectLinks container">  
+      <div className="projectLinks">  
         <a className="row-1 lrg linkBox" href="https://leveragewo.herokuapp.com/">
           <img className="projectImg" src={woImage} alt="Leverage Workout Application Homepage"></img>
           <caption className="projectCaption">Leverage</caption>
