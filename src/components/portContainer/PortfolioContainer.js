@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import NavTabs from './NavTabs';
-import Home from './pages/Home/Home';
-import Contact from './pages/Contact/Contact';
-import Resume from './pages/Resume/Resume';
-import Portfolio from './pages/Portfolio/Portfolio';
-import Footer from './Footer'
-import "../styles/reset.css"
-import "../components/portfolioContainer.css"
+import NavTabs from '../navTabs/NavTabs';
+import Home from '../pages/Home/Home';
+import Contact from '../pages/Contact/Contact';
+import Resume from '../pages/Resume/Resume';
+import Portfolio from '../pages/Portfolio/Portfolio';
+import Footer from '../footer/Footer'
+import "../../images/reset.css"
+import "./portfolioContainer.css"
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -37,7 +37,8 @@ export default function PortfolioContainer() {
         <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
         {/*calling the renderPage method which will return a component  */} 
         {renderPage()}
-      </div>
+      </div>    
+      
       <Footer />
     </div>
   );

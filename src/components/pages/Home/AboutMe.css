@@ -10,16 +10,15 @@
     flex-direction: column;
     display: flex;
     align-items: center;
-    /* max-width: 75vw; */
     /* min-height: 80vh; */
     color: rgba(233, 207, 62, 0.959);
-    flex-basis: 100vw;
+    
     /* background-color:chartreuse; */
 }
 
 .image {
-    /* background-color: palegoldenrod; */
-    /* border-top: #534A8C solid 5px; */
+    top: 3vh;
+    left:5vw;
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -34,15 +33,8 @@
     text-align: center;
     margin: 0px;
     padding-right: 0px;
-    order: 3;
+    order: 2;
 }
-/* .aboutMeContainer #image {
-    transform: translate(-100%);
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 2.6em;
-    
-} */
-
 
 #im {
     font-size: 1.5em;
@@ -51,99 +43,109 @@
     margin-top: 3vh;
     color:rgba(233, 207, 62, 0.959);
     order: 1;
-}
-#nameTarget {
-    color:rgba(233, 207, 62, 0.959);
+    display:none;
 }
 
 #aboutMe {
-    padding-top: 2vh;
-    padding-left:3vw;
-    font-size: 1.8em;
-    line-height: 1.3em;
+    font-size: 2.5em;
+    line-height: 1em;
     font-family: 'Arimo', sans-serif;
     animation-name: textdrop;
     animation-duration: 4s;
     animation-fill-mode: forwards;
     position: relative;
-    /* text-align: center; */
-    order: 2;
+    left: 1vw;
+    order: 3;
     color: white;
 }
-/* #fsline {
-    color: rgba(233, 207, 62, 0.959);
-} */
 
+#aboutMe p:nth-child(2), :nth-child(4) {
+    color:rgba(233, 207, 62, 0.959);
+}
+
+#aboutMe p:nth-child(3) {
+    font-family: 'Indie Flower', cursive;
+}
+/* text drop animation from top*/
 @keyframes textdrop {
     0% {top: -100vh;}
     100%{top: 0vh;}
 }
- 
+/* image slide animation from left */
 @keyframes imageslide {
-    0% {transform: translate(-100%); box-shadow: 0px 0px 1em 5px white; border-radius: 0%;}
+    0% {transform: translate(-150%); box-shadow: 0px 0px 1em 5px white; border-radius: 0%;}
     25% {}
     50% {box-shadow: 0px 0px 1em 5px white;}
     75% {transform: translate(0%); box-shadow: 0px 0px 1em 5px gold;}
     100% {box-shadow: 0px 0px 0px 0px;}
 }
 
+/* first media break when going beyond 750px width */
 @media (min-width: 750px) {
     @keyframes imageslide {
         0% {transform: translate(-400%); box-shadow: 0px 0px 1em 5px white;}
         25% {}
         50% {box-shadow: 0px 0px 1em 5px white;}
         75% {transform: translate(0%); box-shadow: 0px 0px 1em 5px rgba(233, 207, 62, 0.959);}
-        100% {box-shadow: 0px 0px 0px 0px;}
+        100% { box-shadow: 0px 0px 0px 0px;}
     }
 
     #im {
-        font-size: 3em;
+        padding-bottom: 0px;
+        margin-top: 3vh;
+        font-size: 4em;
         text-align: center;
         font-family: 'Indie Flower', cursive;
         width: 100%;
         order: 1;
+        display: block;
+        color: white;
     }
 
     .image {
-        border: 5px solid rgba(233, 207, 62, 0.959);
-        position: relative;
-        order: 3;
-        /* bottom: 8vh;
-        right: 5vw; */
+        border: 3px solid rgba(233, 207, 62, 0.959);
+        left: 17%;
+        bottom: 13%;
+        order: 2;
+        height: 400px;
+        width: 400px;
     }
 
-    #aboutMe {
-
-        font-size: 4em;
+    #aboutMe {    
+        font-size: 2.5em;
         font-family: 'Arimo', sans-serif;
         position: relative;
+        left: 0px;
         text-align: start;
         padding-top: 0px;
-        width: fit-content;
+        width: 75%;
         display: flex;
         flex-direction: column;
-        order: 2;
-        /* left: 15vw; */
+        order: 3;
+        height: 50vh;
+    }
+
+    #aboutMe p {
+        width: fit-content;
+        position: relative;
+        right: 0vw;
+        bottom: 4vh;
+        font-size: 2em;
+        line-height: .8em
+    }
+    
+    #aboutMe p :nth-child(2), :nth-child(4) {
+        color:rgba(233, 207, 62, 0.959);
+    }
+
+    #aboutMe p:nth-child(3) {
+        font-family: 'Indie Flower', cursive;
+        font-size: 2em;
     }
 
     .aboutMeContainer {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        position: relative;
-        height: 100%;
-        width: 85%;
-       
-    }
-    .aboutMeContainer > *{
-        
-        flex-basis: 1;
+        width: 85vw;
+        height: 100%; 
     }
 }
 
-@media (max-width: 1230px) {
-
-}
-
-/* #534A8C = medium purple */

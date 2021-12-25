@@ -1,8 +1,7 @@
 import React from "react";
-import { Row, Col } from 'react-bootstrap';
-import github from '../styles/githubIcon.svg';
-import linkedin from '../styles/linkedIn.svg';
-import twitter from '../styles/twitter.svg';
+import github from '../../images/githubIcon.svg';
+import linkedin from '../../images/linkedIn.svg';
+import twitter from '../../images/twitter.svg';
 import "./Footer.css"
 
 function Footer() {

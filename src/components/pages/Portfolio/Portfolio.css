@@ -7,26 +7,20 @@
     font-family: 'Prompt', sans-serif;
     margin: 0px;
     color: rgba(233, 207, 62, 0.959);
-    /* background-color: #534A8C; */
     padding-bottom: 3vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 20%;
 }
 
-/* newly added */
 .portContainer {
-    height: 75vh;
+    height: fit-content;
     font-family: 'Source Sans Pro', sans-serif;
     padding: 0px;
     flex-direction: column;
     display: flex;
     align-items: center;
-    /* max-width: 75vw; */
-    /* min-height: 80vh; */
-    color: rgba(233, 207, 62, 0.959);
-    /* background-color:chartreuse; */
+    color: rgba(233, 207, 62, 0.959); 
 }
 
 
@@ -48,9 +42,10 @@
 .linkBox {
     text-align: center;
 }
+
 .projectImg:hover {
     box-shadow: .4em .4em .3em .2em white;
-    border: 2px solid rgba(233, 207, 62, 0.959);
+    border: 2px solid white;
 }
 
 .projectLinks {
@@ -63,7 +58,7 @@
     align-content: space-between;
     padding: 0px;
     padding-top: 2vh;
-    padding-bottom: 2vh;      
+    padding-bottom: 2vh; 
 }
 
 .projectImg {
@@ -81,34 +76,36 @@
 @media (min-width: 750px) {
     .portContainer {
         height: 100%;
-        width: 80%;
+        width: 100%;
     }
     
     .portfolioPage {
-        height: 20%;
-        width: 100%;
         font-family: 'Prompt', sans-serif;
         margin: 0px;
         color: rgba(233, 207, 62, 0.959);
-        /* background-color: #534A8C; */
         padding-bottom: 3vh;
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 1.5em;
     }
 
     .projectLinks {
-        height: 80%;
+        height: 100%;
         width: 100%;
         border-radius: 3px;
         border-color:black; 
         justify-content: center;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
         align-content: space-between;
         padding: 0px;
         padding-top: 2vh;
-        padding-bottom: 2vh;      
+        padding-bottom: 5vh;
+    }
+    
+    .portfolioText {
+        text-align: start;
     }
 
 }
