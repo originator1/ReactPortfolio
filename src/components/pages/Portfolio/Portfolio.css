@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 .portfolioPage {
     font-family: 'Prompt', sans-serif;
     margin: 0px;
-    color: rgba(233, 207, 62, 0.959);
     padding-bottom: 3vh;
     display: flex;
     flex-direction: column;
@@ -20,23 +19,29 @@
     flex-direction: column;
     display: flex;
     align-items: center;
-    color: rgba(233, 207, 62, 0.959); 
+ 
 }
 
 
 .portfolioText {
     width: 80%;
-    font-size: .85em;
+    font-size: 1.5em;
+    /* font-style: italic; */
 }
 
 .projectCaption {
+    width: fit-content;
+    margin: auto;
     font-size: 1.2em;
-    padding-left: 2vw;
+    
     padding-top: 2.2vh;
     text-align: center; 
     text-decoration: none;
     display:block;
-    color: rgba(233, 207, 62, 0.959);
+    color: white;
+    background-color: black;
+    border-bottom: none;
+    /* border-radius: 100% 100% 0 0; */
 }
 
 .linkBox {
@@ -69,11 +74,17 @@
     margin-right: 1.5vw;
     border-radius: 5px;
     margin-top: 3vh;
-    border: 3px solid rgba(233, 207, 62, 0.959);
-    box-shadow: .75em .5em .2em .2em rgba(233, 207, 62, 0.959);
+    border: 3px solid black;
+    box-shadow: .75em .5em .2em .2em black;
 }
 
-@media (min-width: 750px) {
+#portHeader {
+    font-weight: 900;
+    font-size: 2.2em;
+}
+/* #01B0F0 */
+
+/* @media (min-width: 750px) {
     .portContainer {
         height: 100%;
         width: 100%;
@@ -108,4 +119,4 @@
         text-align: start;
     }
 
-}
+} */

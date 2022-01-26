@@ -1,151 +1,41 @@
-/* * {
-    background-color: #A8B0BF; 
-} */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+
 .aboutMeContainer {
-    height: 70vh;
-    font-family: 'Source Sans Pro', sans-serif;
-    padding: 0px;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    /* min-height: 80vh; */
-    color: rgba(233, 207, 62, 0.959);
-    
-    /* background-color:chartreuse; */
-}
-
-.image {
-    top: 3vh;
-    left:5vw;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    border: 3px solid rgba(233, 207, 62, 0.959);
-    box-shadow: 0px 0px 1em 5px white;
-    opacity: .85;
-    /* transition: transform 1s ease-in-out; */
-    animation-name: imageslide;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-    position: relative;
-    text-align: center;
-    margin: 0px;
-    padding-right: 0px;
-    order: 2;
-}
-
-#im {
-    font-size: 1.5em;
-    font-family: 'Architects Daughter', cursive;
-    padding-bottom: 1vh;
-    margin-top: 3vh;
-    color:rgba(233, 207, 62, 0.959);
-    order: 1;
-    display:none;
-}
-
-#aboutMe {
-    font-size: 2.5em;
-    line-height: 1em;
-    font-family: 'Arimo', sans-serif;
-    animation-name: textdrop;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-    position: relative;
-    left: 1vw;
-    order: 3;
     color: white;
 }
 
-#aboutMe p:nth-child(2), :nth-child(4) {
-    color:rgba(233, 207, 62, 0.959);
+.aboutMe {
+    width: fit-content;
+    margin: auto;
+    margin-top: 4vh;
+    position: relative;
+    background: none;
+    z-index: 0;
 }
 
-#aboutMe p:nth-child(3) {
-    font-family: 'Indie Flower', cursive;
+
+.aboutMe > * {
+    font-size: 1.75em;
+    font-weight:400;
 }
-/* text drop animation from top*/
-@keyframes textdrop {
-    0% {top: -100vh;}
-    100%{top: 0vh;}
+#profileImg {
+    border-radius: 50%;
 }
-/* image slide animation from left */
-@keyframes imageslide {
-    0% {transform: translate(-150%); box-shadow: 0px 0px 1em 5px white; border-radius: 0%;}
-    25% {}
-    50% {box-shadow: 0px 0px 1em 5px white;}
-    75% {transform: translate(0%); box-shadow: 0px 0px 1em 5px gold;}
-    100% {box-shadow: 0px 0px 0px 0px;}
+ .listItems > * {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: .85em;
+ }
+
+#resBtn {
+    color: black;
+    background-color: white;
+    border: 3px solid black;
 }
 
-/* first media break when going beyond 750px width */
-@media (min-width: 750px) {
-    @keyframes imageslide {
-        0% {transform: translate(-400%); box-shadow: 0px 0px 1em 5px white;}
-        25% {}
-        50% {box-shadow: 0px 0px 1em 5px white;}
-        75% {transform: translate(0%); box-shadow: 0px 0px 1em 5px rgba(233, 207, 62, 0.959);}
-        100% { box-shadow: 0px 0px 0px 0px;}
-    }
-
-    #im {
-        padding-bottom: 0px;
-        margin-top: 3vh;
-        font-size: 4em;
-        text-align: center;
-        font-family: 'Indie Flower', cursive;
-        width: 100%;
-        order: 1;
-        display: block;
-        color: white;
-    }
-
-    .image {
-        border: 3px solid rgba(233, 207, 62, 0.959);
-        left: 17%;
-        bottom: 13%;
-        order: 2;
-        height: 400px;
-        width: 400px;
-    }
-
-    #aboutMe {    
-        font-size: 2.5em;
-        font-family: 'Arimo', sans-serif;
-        position: relative;
-        left: 0px;
-        text-align: start;
-        padding-top: 0px;
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-        order: 3;
-        height: 50vh;
-    }
-
-    #aboutMe p {
-        width: fit-content;
-        position: relative;
-        right: 0vw;
-        bottom: 4vh;
-        font-size: 2em;
-        line-height: .8em
-    }
-    
-    #aboutMe p :nth-child(2), :nth-child(4) {
-        color:rgba(233, 207, 62, 0.959);
-    }
-
-    #aboutMe p:nth-child(3) {
-        font-family: 'Indie Flower', cursive;
-        font-size: 2em;
-    }
-
-    .aboutMeContainer {
-        width: 85vw;
-        height: 100%; 
-    }
+#resBtn :hover {
+    background-color: blue;
 }
 

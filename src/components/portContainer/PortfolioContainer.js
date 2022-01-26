@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import NavTabs from '../navTabs/NavTabs';
 import Home from '../pages/Home/Home';
 import Contact from '../pages/Contact/Contact';
-import Resume from '../pages/Resume/Resume';
+// import Resume from '../pages/Resume/Resume';
 import Portfolio from '../pages/Portfolio/Portfolio';
 import Footer from '../footer/Footer'
 import "../../images/reset.css"
 import "./portfolioContainer.css"
+import { Container } from 'react-bootstrap'
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -22,16 +23,13 @@ export default function PortfolioContainer() {
       return <Contact />;
       
     }
-    if (currentPage === 'Resume') {
-      return <Resume />;
-    }
     return <Home />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div className="mainBackground">
+    <Container  style={{padding: 0, margin: 0}} className="mainBackground">
         {/*passing the currentPage from state and the function to update it */}
       <div className="topBox">
         <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
@@ -40,6 +38,14 @@ export default function PortfolioContainer() {
       </div>    
       
       <Footer />
-    </div>
+    </Container>
   );
 }
+
+//{.mainBackground
+//  [.topBox---------------80 height 100 width
+//    -NavTabs------take to outter scope?
+//    -Rendered Page  
+//  ]
+//  Footer
+//}

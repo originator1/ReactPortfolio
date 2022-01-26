@@ -13,12 +13,12 @@ export default function Portfolio() {
 
   return (
     <div className="portContainer container"> 
-      <div className="portfolioPage text-center">
+      <div className="portfolioPage text-center" style={{fontFamily: "'Fjalla One', sans-serif"}}>
         <br/>
         <br/>
-        <h1>Portfolio Page</h1>
-        <p className="portfolioText">⁘ Here are a few projects I have started over the past 3 months while attending UTA bootcamp</p>
-        <p className="portfolioText">⁘ Each project displayed has a link to respected Github repo with deployed app link in README. </p>
+        <h1 id="portHeader">Portfolio Page</h1>
+        <p className="portfolioText">∘  Below are a few projects I started over the past 3 months while attending UTA  coding bootcamp</p>
+        <p className="portfolioText">∘  Each project displayed has a link to respected Github repo with deployed app link in README. </p>
       </div>
       <div className="projectLinks">  
         <a href="https://leveragewo.herokuapp.com/">

@@ -7,9 +7,9 @@ import "./Footer.css"
 function Footer() {
     return (
         // <div className="footerBox">
-            <div className="text-center iconRow" cs="auto">
+            <div className="text-center iconRow">
                   
-                    <a href="https://github.com/originator1">
+                    <a style={{marginRight: '2.5vw'}} href="https://github.com/originator1">
                         <img className="eachIcon" src={github} alt="github icon" />
                     </a>
                
@@ -17,7 +17,7 @@ function Footer() {
                         <img className="eachIcon" src={linkedin} alt="linkedIn icon" />
                     </a>
                 
-                    <a href="https://twitter.com">
+                    <a style={{marginLeft: '2.5vw'}} href="https://twitter.com">
                         <img className="eachIcon" src={twitter} alt="twitter icon" />
                     </a>
                

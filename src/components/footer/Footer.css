@@ -3,31 +3,31 @@
 .iconRow {
     height: 10vh;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content:center;
-    width: 100%;
+    width: 100vw;
     flex-wrap: wrap;
     
 }
 
 .eachIcon {
     filter: drop-shadow(4px -5px .9px black);
-    padding-left: 2.5vw;
+    /* padding-left: 2.5vw; */
     position: relative;
     animation-name: icons;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;  
 }
 
 
 @keyframes icons {
-    0% {bottom: 0px; filter: drop-shadow(0px 0px 2px rgba(233, 207, 62, 0.959));}
+    0% {bottom: 0px; filter: drop-shadow(0px 0px 2px white);}
     /* 25% { bottom: 4px; filter: drop-shadow(4px 0px .1px grey)} */
-    50% {bottom: 25px; filter: drop-shadow(0px 13px 1px rgba(233, 207, 62, 0.959));}
+    50% {bottom: 20px; filter: drop-shadow(0px 13px 1px black);}
     /* 75% {bottom: 4px;}  */
-    100% {bottom: 0px; filter: drop-shadow(0px 0px 2px rgba(233, 207, 62, 0.959))}
+    100% {bottom: 0px; filter: drop-shadow(0px 0px 2px white)}
 }
-
+/* 
 @media (min-width: 750px) {
     .iconRow {
         height: 10vh;
@@ -36,7 +36,7 @@
         justify-items: center;
         width: 100%;
         flex-wrap: wrap;
-        border-bottom: 4px solid rgba(233, 207, 62, 0.959);
+        border-bottom: 4px solid white;
         
     } 
-}
+} */

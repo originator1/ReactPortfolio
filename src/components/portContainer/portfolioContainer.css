@@ -1,19 +1,27 @@
+/* * {
+    font-size: 18px;
+} */
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background: url(https://cdn.pixabay.com/photo/2017/08/28/19/15/background-2691002_960_720.jpg) repeat; */
+    background:radial-gradient(100% 200% at left,white 50%,rgba(12, 82, 235, 0.89) 50.1%);
+};
 
 .mainBackground {
-    background-color: #537895;
-    background-image: linear-gradient(315deg, #537895 0%, #09203f 74%); 
     height: 100%;
-    width: 100%;
-     
-    
+    padding:0px;
 }
 
 .topBox {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     /* border: 1px solid magenta; */
-   
-    
+   min-height: 90vh;
+   max-height: 100%;
+   width: 100vw;
 }
 
 .myFooter {
