@@ -10,6 +10,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: rgb(13, 61, 68);
+    font-size: .9em;
+    /* background-color: rgb(21, 8, 204);
+    border-radius: 50px; */
 }
 
 .portContainer {
@@ -30,18 +34,22 @@
 }
 
 .projectCaption {
-    width: fit-content;
+    width: 80%;
     margin: auto;
     font-size: 1.2em;
-    
-    padding-top: 2.2vh;
+    position: relative;
+    bottom: 7vh;
+    /* padding-top: 2.2vh; */
     text-align: center; 
-    text-decoration: none;
+    text-decoration-color: none;
     display:block;
-    color: white;
-    background-color: black;
-    border-bottom: none;
-    /* border-radius: 100% 100% 0 0; */
+    color: black;
+    font-weight: bold;
+    background: white;
+    border: solid 1px rgb(23, 108, 122);
+    border-radius: 70px 70px 70px 70px;
+    opacity: 1;
+    z-index: 0;
 }
 
 .linkBox {
@@ -55,7 +63,7 @@
 
 .projectLinks {
     height: 80%;
-    border-radius: 3px;
+    border-radius: 10px;
     border-color:black; 
     justify-content: center;
     display: flex;
@@ -72,15 +80,21 @@
     align-content: space-around;
     margin-left: 1vw;
     margin-right: 1.5vw;
-    border-radius: 5px;
+    border-radius: 22px;
     margin-top: 3vh;
-    border: 3px solid black;
-    box-shadow: .75em .5em .2em .2em black;
+    border: 3px solid rgb(23, 108, 122);
+    box-shadow: 1em 1.3em 1.3em .2em black;
 }
 
 #portHeader {
     font-weight: 900;
     font-size: 2.2em;
+}
+
+@media (min-width: 850px) {
+    .projectCaption {
+        bottom: 5vh;
+    }  
 }
 /* #01B0F0 */
 

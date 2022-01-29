@@ -2,30 +2,31 @@
 
 .iconRow {
     height: 10vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content:center;
-    width: 100vw;
     flex-wrap: wrap;
     
 }
 
 .eachIcon {
-    filter: drop-shadow(4px -5px .9px black);
+    filter: drop-shadow(4px -5px .9px rgb(14, 71, 80));
     /* padding-left: 2.5vw; */
     position: relative;
     animation-name: icons;
     animation-duration: 5s;
-    animation-iteration-count: infinite;  
+    animation-iteration-count: infinite;
+    fill:paleturquoise;  
 }
 
 
 @keyframes icons {
-    0% {bottom: 0px; filter: drop-shadow(0px 0px 2px white);}
+    0% {bottom: 0px; filter: drop-shadow(0px 0px 0px white);}
     /* 25% { bottom: 4px; filter: drop-shadow(4px 0px .1px grey)} */
-    50% {bottom: 20px; filter: drop-shadow(0px 13px 1px black);}
-    /* 75% {bottom: 4px;}  */
-    100% {bottom: 0px; filter: drop-shadow(0px 0px 2px white)}
+    50% {bottom: 13px; filter: drop-shadow(0px 13px 1.75px white);}
+    /* 75% {bottom: 9px; filter: drop-shadow(0px 5px 1.2px rgb(19, 18, 18));} */
+    100% {bottom: 0px; filter: drop-shadow(0px 0px 0px white)}
 }
 /* 
 @media (min-width: 750px) {
@@ -40,3 +41,13 @@
         
     } 
 } */
+/* 
+@media (min-width: 800px) {
+    .iconRow {
+        justify-content: end;
+    }
+
+    .iconRow  a > * {
+        margin-right: 70px;
+    }
+  } */

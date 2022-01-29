@@ -3,16 +3,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .aboutMeContainer {
     color: white;
 }
 
 .aboutMe {
+    height: 100%;
     width: fit-content;
     margin: auto;
     margin-top: 4vh;
     position: relative;
-    background: none;
+    /* background: none; */
     z-index: 0;
 }
 
@@ -21,21 +24,115 @@
     font-size: 1.75em;
     font-weight:400;
 }
-#profileImg {
-    border-radius: 50%;
+
+.listItems {
+    font-size: .75em;
 }
  .listItems > * {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: .85em;
+    font-family: 'Poppins', sans-serif;
+   
  }
 
 #resBtn {
-    color: black;
+    color: rgb(23, 108, 122);
     background-color: white;
-    border: 3px solid black;
+    border: 1px solid rgb(14, 71, 80);
+    border-radius: 10px;
+    font-style: bold;
 }
 
-#resBtn :hover {
-    background-color: blue;
+#resBtn:hover {
+    background-color: rgb(137, 214, 226);
 }
 
+#cardBody h1 {
+    color: rgb(23, 108, 122);
+    font-weight: 900;
+    background-color: white;
+    border-radius: 50px;
+    padding: 1vh 1vw 1vh 1vw;
+}
+
+
+#cardList > * {
+    color: rgb(14, 71, 80);
+    font-style: bold;
+    text-align: start;
+    margin: auto;
+    
+}
+
+#cardList {
+    position: relative;
+    /* bottom: 50vh; */
+    font-size: 1.4em;
+}
+
+#cardImg {
+    height: 500px;
+    width: 350px; 
+    border-radius: 200px 300px 200px 300px;
+}
+
+
+
+
+@media (min-width: 850px) and (min-height: 850px) {
+    .myInfo {
+        width: 30vw;
+        position: relative;
+        bottom: 40vh;
+        left: 20vw;
+        text-align: start;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em;
+    }
+
+  
+
+    #cardImg {
+        position: relative;
+        right: 21vw;
+        top: 10vh;
+        height: 500px;
+        width: 400px;
+        
+    }
+    
+    #cardBody {
+        position: relative;
+        right: 21vw;
+        top: 10vh;
+        color: rgb(58, 146, 161);
+        font-weight: 700;
+    }
+  
+    
+    #cardList {
+        position: relative;
+        left: 24vw;
+        bottom: 45vh;
+        font-size: 1.4em;
+    }
+
+  
+
+    #cardList > * {
+        color: white;
+        font-size: .9em;
+        text-align: start;
+        margin: auto;
+    }
+
+    #resBtn {
+        background-color: white;
+        position: relative;
+        bottom: 45vh;
+        left: 23.5vw;
+    }
+    .aboutMe {
+        width: 50%;
+    }
+
+   
+};

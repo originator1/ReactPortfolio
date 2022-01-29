@@ -10,20 +10,35 @@
  flex-direction: column;
  justify-content: center;
  align-content: center;
+ 
+}
+
+.contact > a {
+  border: solid 2px white;
+  margin-top: 1vh;
+  background-color: rgb(14, 71, 80);
+}
+
+.contact > a:hover {
+  background-color:rgb(137, 214, 226);
 }
 
 .contact .btn {
   width: 45vw;
-  margin-top: 2vh;
+  font-weight: bold;
+  font-style: bold;
   justify-content: center;
   align-content: center;
   /* background-color:rgba(233, 207, 62, 0.959); */
   color: white;
+  border-radius: 15px;
   
   /* align-items: center; */
   /* border: red 2px solid; */
   
 }
+
+
 
 @media (min-width: 750px) {
   .contact {
