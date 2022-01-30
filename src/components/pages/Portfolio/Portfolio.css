@@ -43,7 +43,7 @@
     text-align: center; 
     text-decoration-color: none;
     display:block;
-    color: black;
+    color: rgb(14, 71, 80);
     font-weight: bold;
     background: white;
     border: solid 1px rgb(23, 108, 122);
@@ -82,7 +82,7 @@
     margin-right: 1.5vw;
     border-radius: 22px;
     margin-top: 3vh;
-    border: 3px solid rgb(23, 108, 122);
+    border: 3px solid rgb(14, 71, 80);
     box-shadow: 1em 1.3em 1.3em .2em black;
 }
 
