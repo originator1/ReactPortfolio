@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import NavTabs from '../navTabs/NavTabs';
 import Home from '../pages/Home/Home';
 import Contact from '../pages/Contact/Contact';
-// import Resume from '../pages/Resume/Resume';
 import Portfolio from '../pages/Portfolio/Portfolio';
 import Footer from '../footer/Footer'
 import "../../images/reset.css"
@@ -33,7 +32,7 @@ export default function PortfolioContainer() {
         {/*passing the currentPage from state and the function to update it */}
       <div className="topBox">
         <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-        {/*calling the renderPage method which will return a component  */} 
+        {/*return a component */} 
         {renderPage()}
       </div>    
       
@@ -42,10 +41,3 @@ export default function PortfolioContainer() {
   );
 }
 
-//{.mainBackground
-//  [.topBox---------------80 height 100 width
-//    -NavTabs------take to outter scope?
-//    -Rendered Page  
-//  ]
-//  Footer
-//}

@@ -6,7 +6,7 @@ import "./Footer.css"
 
 function Footer() {
     return (
-        // <div className="footerBox">
+       
             <div className="text-center iconRow">
                   
                     <a style={{marginRight: '2.5vw'}} href="https://github.com/originator1">
@@ -23,7 +23,7 @@ function Footer() {
                
 
             </div>
-        // </div>
+        
     )
 }
 

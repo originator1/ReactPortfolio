@@ -28,10 +28,10 @@
 .listItems {
     font-size: .75em;
 }
- .listItems > * {
-    font-family: 'Poppins', sans-serif;
-   
- }
+
+.listItems > * {
+    font-family: 'Poppins', sans-serif;  
+}
 
 #resBtn {
     color: rgb(23, 108, 122);
@@ -58,13 +58,11 @@
     color: rgb(14, 71, 80);
     font-style: bold;
     text-align: start;
-    margin: auto;
-    
+    margin: auto;   
 }
 
 #cardList {
     position: relative;
-    /* bottom: 50vh; */
     font-size: 1.4em;
 }
 
@@ -72,6 +70,7 @@
     height: 500px;
     width: 350px; 
     border-radius: 200px 300px 200px 300px;
+    opacity: .95;
 }
 
 
@@ -95,8 +94,7 @@
         right: 21vw;
         top: 10vh;
         height: 500px;
-        width: 400px;
-        
+        width: 400px;   
     }
     
     #cardBody {
@@ -115,8 +113,6 @@
         font-size: 1.4em;
     }
 
-  
-
     #cardList > * {
         color: white;
         font-size: .9em;
@@ -130,6 +126,7 @@
         bottom: 45vh;
         left: 23.5vw;
     }
+    
     .aboutMe {
         width: 50%;
     }
