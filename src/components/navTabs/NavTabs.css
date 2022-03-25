@@ -1,45 +1,49 @@
+.linkBox {
+  height: 7vh;
+  border-radius: 50px;
+  background-color: rgb(14, 71, 80);
+  width: 75vw;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 1vh;
+}
+
 .linkBox > * {
   border-radius: 50px;
-  border: solid 1px rgb(14, 71, 80);
-  background-color: rgb(14, 71, 80);
-  margin: 0px;
-  font-size:1em; 
+  border: solid 1px white;
+  box-shadow: 2px 2px rgb(66, 66, 66);
+  font-size:.9em;
+  padding-left: 1vw; 
 }
 
-.linkBox a {
-  font-size: .75em;
-}
-
-#navName {
-  padding-left: 1vw;
-  padding-right: 1vw;
-  padding-bottom: 1vh;
-  padding-top: 1vh;
-  color: white;
-}
 .linkBox > :hover {
-  background-color: rgb(137, 214, 226);
+  color: white;
+  border: 3px solid white;
 }
 
+/* //keep */
 a.nav-link {
-  padding: none;
-  margin-right: 0px;
+  margin-left: .5vw;
+  margin-right: .5vw;
+  background-color: white;
+}
+
+/* non clicked navlinks text color */
+a.nav-link.navbar-brand {
+  color: rgb(14, 71, 80);
 }
 
 a.nav-link.active {
-  background-color: rgb(137, 214, 226);
+  background-color: #dad8d8;
 }
 
-@media (min-width: 760px) {
-  a.nav-link {
-    font-size: 20px;
+
+@media (min-width: 575px) {
+  .linkBox {
+     width: 90%;
   }
-
-  .linkBox > * {
-    font-size: 26px;
-  }  
 }
-
 
 @keyframes iconflip {
   0% {transform: rotateY(0deg);}
